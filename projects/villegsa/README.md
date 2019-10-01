@@ -1,2 +1,2 @@
-# CS362-F2019
+# Samuel Villegas, villegsa
 OSU CS362 Software Engineering II Fall 2019
