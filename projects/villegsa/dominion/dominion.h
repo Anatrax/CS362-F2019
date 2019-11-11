@@ -93,6 +93,12 @@ int shuffle(int player, struct gameState *state);
 /* Assumes all cards are now in deck array (or hand/played):  discard is
  empty */
 
+int playBaron(struct gameState *state, int discardEstate, int currentPlayer);
+int playMinion(struct gameState *state, int handPos, int currentPlayer, int choice1, int choice2);
+int playAmbassador(struct gameState *state, int choice1, int choice2, int currentPlayer, int handPos);
+int playTribute(struct gameState *state, int currentPlayer, int nextPlayer, int tributeRevealedCards[]);
+int playMine(struct gameState *state, int choice1, int choice2, int currentPlayer, int handPos);
+
 int playCard(int handPos, int choice1, int choice2, int choice3,
              struct gameState *state);
 /* Play card with index handPos from current player's hand */
