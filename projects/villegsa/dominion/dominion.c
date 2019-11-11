@@ -683,7 +683,7 @@ int getCost(int cardNumber)
 
 int gainEstate(struct gameState *state, int currentPlayer) {
     if (supplyCount(estate, state) > 0) {
-        gainCard(estate, state, 0, currentPlayer); // Gain an estate
+        gainCard(estate, state, 2, currentPlayer); // Gain an estate
 
         state->supplyCount[estate]--; // Decrement Estates
         if (supplyCount(estate, state) == 0)
